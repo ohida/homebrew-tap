@@ -2,7 +2,7 @@ class Flows < Formula
   desc ""
   homepage ""
   url "https://ohida.net/flows/releases/flows-0.0.1.tar.gz"
-  sha256 "502434c1e75626d3e2bb9378acad151bad1f9426d7107d1853b38e9aad181551"
+  sha256 "efae7d9dce9f8c876388e257bab708d04c7da0078ff9f2eb190d84fd7ea9dd6a"
   license ""
 
   # depends_on "cmake" => :build
@@ -21,7 +21,7 @@ class Flows < Formula
 
   bottle do
     root_url "https://ohida.net/flows/releases"
-    sha256 big_sur: "502434c1e75626d3e2bb9378acad151bad1f9426d7107d1853b38e9aad181551"
+    sha256 big_sur: "efae7d9dce9f8c876388e257bab708d04c7da0078ff9f2eb190d84fd7ea9dd6a"
   end
 
   def pour_bottle?
