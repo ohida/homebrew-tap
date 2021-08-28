@@ -4,7 +4,7 @@
 class Flows < Formula
   desc ""
   homepage ""
-  url ""
+  url "https://ohida.net/flows/bin/flows-0.0.1.tgz"
   sha256 ""
   license ""
 
