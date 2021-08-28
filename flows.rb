@@ -19,7 +19,8 @@ class Flows < Formula
     system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
 
-    bin.install 'flows'
+    bin.install "flows"
+    bin.install_symlink "flows"
   end
 
   bottle do
