@@ -2,26 +2,19 @@ class Flows < Formula
   desc ""
   homepage ""
   url "https://ohida.net/flows/releases/flows-0.0.1.tar.gz"
-  sha256 "efae7d9dce9f8c876388e257bab708d04c7da0078ff9f2eb190d84fd7ea9dd6a"
+  sha256 "388fa45970dbad9cd5bf2aae23fa581f7cb8f2ee09440f5813042645547f9841"
   license ""
 
-  # depends_on "cmake" => :build
   depends_on "graphviz"
   depends_on "chrome-cli"
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", *std_configure_args, "--disable-silent-rules"
-    # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-
-    bin.install 'flows'
+    bin.install "flows"
   end
 
   bottle do
     root_url "https://ohida.net/flows/releases"
-    sha256 big_sur: "efae7d9dce9f8c876388e257bab708d04c7da0078ff9f2eb190d84fd7ea9dd6a"
+    sha256 big_sur: "388fa45970dbad9cd5bf2aae23fa581f7cb8f2ee09440f5813042645547f9841"
   end
 
   def pour_bottle?
@@ -32,4 +25,3 @@ class Flows < Formula
     system "#{bin}/flows", "version"
   end
 end
-
