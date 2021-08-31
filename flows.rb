@@ -2,7 +2,7 @@ class Flows < Formula
   desc ""
   homepage ""
   url "https://ohida.net/flows/releases/flows-0.0.1.tar.gz"
-  sha256 "388fa45970dbad9cd5bf2aae23fa581f7cb8f2ee09440f5813042645547f9841"
+  sha256 "3577a38079becb131248d7606feac7cc2fc23e11fc6aec50eb577fa369f151fb"
   license ""
 
   depends_on "graphviz"
@@ -14,7 +14,7 @@ class Flows < Formula
 
   bottle do
     root_url "https://ohida.net/flows/releases"
-    sha256 big_sur: "388fa45970dbad9cd5bf2aae23fa581f7cb8f2ee09440f5813042645547f9841"
+    sha256 big_sur: "3577a38079becb131248d7606feac7cc2fc23e11fc6aec50eb577fa369f151fb"
   end
 
   def pour_bottle?
